@@ -1,0 +1,2 @@
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache

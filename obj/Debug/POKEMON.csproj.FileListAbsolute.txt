@@ -1,0 +1,13 @@
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\POKEMON.exe.config
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\POKEMON.exe
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\POKEMON.pdb
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.csproj.AssemblyReference.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.Properties.Resources.resources
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.csproj.GenerateResource.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.csproj.CoreCompileInputs.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.exe
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.pdb
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.Form1.resources
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\dominio.dll
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\dominio.pdb
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.csproj.CopyComplete

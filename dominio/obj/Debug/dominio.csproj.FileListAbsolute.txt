@@ -1,0 +1,6 @@
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\bin\Debug\dominio.dll
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\bin\Debug\dominio.pdb
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\obj\Debug\dominio.dll
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\dominio\obj\Debug\dominio.pdb
