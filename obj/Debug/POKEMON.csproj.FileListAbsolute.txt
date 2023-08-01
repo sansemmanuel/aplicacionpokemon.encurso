@@ -11,3 +11,4 @@ C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.Form1.resources
 C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\dominio.dll
 C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\bin\Debug\dominio.pdb
 C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.csproj.CopyComplete
+C:\Users\emmanuel\Desktop\cursomaxi\POKEMON\obj\Debug\POKEMON.frmAltaPokemon.resources

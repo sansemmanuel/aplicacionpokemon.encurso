@@ -81,6 +81,11 @@ namespace POKEMON
 
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAltaPokemon alta = new frmAltaPokemon();
+            alta.ShowDialog();
+        }
     }
 }
 

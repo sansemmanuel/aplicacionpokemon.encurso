@@ -47,7 +47,16 @@ namespace dominio
        ///metodos agregar 
         public void agregar(pokemon nuevo)
         {
+            accesodatos datos = new accesodatos(); ///objeto conexion para insert
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
         public void modificar(pokemon modificar)
         {

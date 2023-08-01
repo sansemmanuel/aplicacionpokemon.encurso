@@ -33,7 +33,7 @@ namespace dominio
             {
                 datos.cerrarconexion();
             }
-            return Elementos;
+            return lista;
         }
     }
 }

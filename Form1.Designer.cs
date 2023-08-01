@@ -32,7 +32,7 @@ namespace POKEMON
             this.dgvPokemon = new System.Windows.Forms.DataGridView();
             this.pictureBoxPokemon = new System.Windows.Forms.PictureBox();
             this.btnNext = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).BeginInit();
             this.SuspendLayout();
@@ -62,18 +62,19 @@ namespace POKEMON
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(156, 23);
             this.btnNext.TabIndex = 2;
-            this.btnNext.Text = "button1";
+            this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(248, 257);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(248, 257);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(156, 23);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form1
             // 
@@ -81,7 +82,7 @@ namespace POKEMON
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(431, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.dgvPokemon);
@@ -99,7 +100,7 @@ namespace POKEMON
         private System.Windows.Forms.DataGridView dgvPokemon;
         private System.Windows.Forms.PictureBox pictureBoxPokemon;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 
