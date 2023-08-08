@@ -23,18 +23,17 @@ namespace POKEMON
 
         }
         /// <summary>
-       
+
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
+        
+        
         {
-            pokemonnegocio negocio = new pokemonnegocio();
-            listapokemon = negocio.listar();
-            dgvPokemon.DataSource = negocio.listar();
-            dgvPokemon.Columns["UrlImagen"].Visible = false;
-            cargarImagen(listapokemon[0].UrlImagen);
+            cargar();
         }
+       
 
         private void dgvPokemon_SelectionChanged(object sender, EventArgs e)
         {
@@ -42,6 +41,23 @@ namespace POKEMON
             cargarImagen(seleccionado.UrlImagen);
             //Elementos elem = new Elementos();
             //elem.ToString
+        }
+       
+        private void cargar()
+        {
+            try
+            {
+                pokemonnegocio negocio = new pokemonnegocio();
+                listapokemon = negocio.listar();
+                dgvPokemon.DataSource = negocio.listar();
+                dgvPokemon.Columns["UrlImagen"].Visible = false;
+                cargarImagen(listapokemon[0].UrlImagen);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
         private void cargarImagen(string imagen)
         {
@@ -51,7 +67,7 @@ namespace POKEMON
             }
             catch (Exception ex)
             {
-                pictureBoxPokemon.Load("https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg");
+                pictureBoxPokemon.Load("https://images.pexels.com/photos/2882552/pexels-photo-2882552.jpeg");
                 
             }
         }
@@ -85,6 +101,36 @@ namespace POKEMON
         {
             frmAltaPokemon alta = new frmAltaPokemon();
             alta.ShowDialog();
+            cargar();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            pokemon selected;
+            selected = (pokemon)dgvPokemon.CurrentRow.DataBoundItem;
+            frmAltaPokemon edit = new frmAltaPokemon(selected);
+            edit.ShowDialog();
+            cargar();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            pokemonnegocio negocio = new pokemonnegocio();
+            pokemon seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (pokemon)dgvPokemon.CurrentRow.DataBoundItem;
+                    negocio.eliminar(seleccionado.Id);
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
