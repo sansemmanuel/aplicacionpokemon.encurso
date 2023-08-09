@@ -34,6 +34,10 @@ namespace POKEMON
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnLogi = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +66,7 @@ namespace POKEMON
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(248, 329);
+            this.btnAdd.Location = new System.Drawing.Point(248, 301);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(156, 23);
             this.btnAdd.TabIndex = 3;
@@ -72,7 +76,7 @@ namespace POKEMON
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(248, 358);
+            this.btnEdit.Location = new System.Drawing.Point(248, 330);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(156, 23);
             this.btnEdit.TabIndex = 4;
@@ -82,13 +86,50 @@ namespace POKEMON
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(248, 387);
+            this.btnDelete.Location = new System.Drawing.Point(248, 359);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(156, 23);
             this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Delete From Database";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnLogi
+            // 
+            this.btnLogi.Location = new System.Drawing.Point(248, 387);
+            this.btnLogi.Name = "btnLogi";
+            this.btnLogi.Size = new System.Drawing.Size(156, 23);
+            this.btnLogi.TabIndex = 6;
+            this.btnLogi.Text = "Logic Removal";
+            this.btnLogi.UseVisualStyleBackColor = true;
+            this.btnLogi.Click += new System.EventHandler(this.btnLogi_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Location = new System.Drawing.Point(304, 187);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(100, 20);
+            this.tbSearch.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(245, 190);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Search";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(329, 213);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 9;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Form1
             // 
@@ -96,6 +137,10 @@ namespace POKEMON
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(431, 450);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbSearch);
+            this.Controls.Add(this.btnLogi);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -107,6 +152,7 @@ namespace POKEMON
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,6 +163,10 @@ namespace POKEMON
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnLogi;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 

@@ -28,21 +28,21 @@ namespace POKEMON
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
-        
-        
+
+
         {
             cargar();
         }
-       
+
 
         private void dgvPokemon_SelectionChanged(object sender, EventArgs e)
         {
-           pokemon seleccionado =(pokemon) dgvPokemon.CurrentRow.DataBoundItem;
+            pokemon seleccionado = (pokemon)dgvPokemon.CurrentRow.DataBoundItem;
             cargarImagen(seleccionado.UrlImagen);
             //Elementos elem = new Elementos();
             //elem.ToString
         }
-       
+
         private void cargar()
         {
             try
@@ -68,12 +68,12 @@ namespace POKEMON
             catch (Exception ex)
             {
                 pictureBoxPokemon.Load("https://images.pexels.com/photos/2882552/pexels-photo-2882552.jpeg");
-                
+
             }
         }
 
-        
-            private int currentIndex = 0;
+
+        private int currentIndex = 0;
 
         private void btnNext_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace POKEMON
                 {
                     currentIndex = 0;
                 }
-               
+
                 dgvPokemon.ClearSelection();
 
                 // Seleccionar la fila correspondiente al índice actual
@@ -115,6 +115,15 @@ namespace POKEMON
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            eliminar();
+        }
+
+        private void btnLogi_Click(object sender, EventArgs e)
+        {
+            eliminar(true);
+        }
+        private void eliminar(bool logico = false)
+        {
             pokemonnegocio negocio = new pokemonnegocio();
             pokemon seleccionado;
             try
@@ -123,6 +132,10 @@ namespace POKEMON
                 if (respuesta == DialogResult.Yes)
                 {
                     seleccionado = (pokemon)dgvPokemon.CurrentRow.DataBoundItem;
+                    if (logico)
+                        negocio.eliminarLogi(seleccionado.Id);
+                    else
+                        negocio.eliminar(seleccionado.Id);
                     negocio.eliminar(seleccionado.Id);
                     cargar();
                 }
@@ -131,6 +144,21 @@ namespace POKEMON
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            List<pokemon> listaFiltrada;
+
+            listaFiltrada = listapokemon.FindAll(x => x.Nombre == tbSearch.Text);
+
+            dgvPokemon.DataSource = null;
+            dgvPokemon.DataSource = listaFiltrada;
         }
     }
 }
